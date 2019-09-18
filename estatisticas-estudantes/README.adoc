@@ -1,0 +1,11 @@
+= Programação Funcional, Expressões Lambda e Streams no Java 8
+
+Este é um projeto de exemplo que usa programação funcional no Java 8 com Expressões Lambda e Streams.
+Como para trabalhar com `Streams` precisamos de dados para processar, a classe link:src/main/java/StudentGenerator.java[StudentGenerator] é então utilizada
+para gerar dados de estudantes aleatoriamente (esta é uma classe bastante interessante, ela gera nome, nota, sexo e outros dados de forma aleatória). 
+Para mais detalhes, veja a documentação das classes.
+
+O projeto apenas fornece as classes link:src/main/java/Student.java[Student] e link:src/main/java/Course.java[Course] que representam estudantes e cursos. 
+Por fim a classe link:src/main/java/AppProgramacaoFuncional.java[AppProgramacaoFuncional] posui uma lista de estudantes gerados aleatoriamente. 
+A partir desta lista os exemplos apresentados no material abaixo podem ser desenvolvidos.
+Você terá dados suficientes para poder brincar com estes novos recursos da linguagem Java.
