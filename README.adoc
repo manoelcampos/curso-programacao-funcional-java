@@ -1,0 +1,48 @@
+= Programação Funcional, Expressões Lambda e Streams no Java 8
+
+Este é um projeto base com dados para aprendizado de programação funcional,
+Expressões Lambda e Streams no Java 8.
+Tais temas não estão obrigatoriamente relacionados ao desenvolvimento de sistemas
+distribuídos, mas são recursos extraordinários de diversas linguagens de programação
+modernas que facilitam em muito a vida do programador.
+
+O recurso de Streams do Java 8 (não confundir com _InputStream_ e _OutputStream_ usados
+nos projetos de chat) permitem processamento de dados de forma sequencial e paralelo.
+Neste último caso, processamento paralelo (utilizando múltiplas CPUs de uma mesma máquina)
+tem tudo a ver com sistemas distribuídos.
+
+Desta forma, tais recursos são de fundamental importância para complementar a formação 
+do estudante em programação.
+
+O projeto disponibilizado apenas fornece as classes link:src/main/java/Student.java[Student] e link:src/main/java/Course.java[Course] que são utilizadas
+para armazenar dados de exemplo. Como para trabalhar com `Streams` precisamos de alguns
+dados, a classe link:src/main/java/StudentGenerator.java[StudentGenerator] é então utilizada
+para gerar tais estudantes aleatoriamente (esta é uma classe bastante interessante, ela gera nome, nota, sexo e outros dados de forma aleatória). Para mais detalhes, veja a documentação das classes.
+
+Por fim a classe link:src/main/java/AppProgramacaoFuncional.java[AppProgramacaoFuncional] posui uma lista de estudantes gerados aleatoriamente. A partir desta lista os exemplos apresentados no material abaixo podem ser desenvolvidos.
+Você terá dados suficientes para poder brincar com estes novos recursos da linguagem Java.
+
+ - https://www.oracle.com/technetwork/pt/articles/java/streams-api-java-8-3410098-ptb.html[Curso Streams e Expressões Lambda do Java 8]
+ - http://bit.ly/2I2U5bU[Curso JDK 8 MOOC: Lambdas and Streams Introduction]
+
+
+Estes links já foram fornecidos em vários outros momentos aqui.
+O primeiro é um material estático em português. O segundo é um curso completo em vídeo, mas em inglês.
+Acessando o segundo link você pode ter acesso aos slides do curso.
+Concluindo o curso você ganha um certificado de participação da Oracle.
+Como as inscrições não estão abertas a todo momento, você pode não conseguir
+acessar o material. Mas os vídeos estão disponíveis no https://youtube.com/playlist?list=PLMod1hYiIvSZL1xclvHcsV2dMiminf19x[YouTube].
+Apesar de serem em inglês, os vídeos contam com legendas oficiais (que podem ser traduzidas para o português).
+
+== Para quem seguiu os cursos apresentados acima
+
+Ao iniciar em programação funcional no Java 8, é preciso aprender um novo vocabulário.
+Conhecendo os termos deste vocabulário, quando você vir um método que solicita como parâmetro um objeto:
+
+- `Predicate`, saberá que pode passar uma expressão lambda que representa uma função que recebe um objeto (como `Student`)
+e retorna um valor `boolean`, representando uma condição em relação a tal objeto.
+- `Consumer`, saberá que pode passar uma expressão lambda que representa uma função que recebe um objeto (como `Student`),
+faz qualquer coisa com ele (consome) e não retorna nada (`void`). 
+
+Assim, para entender este novo vocabulário, você poderá ver o JavaDoc do pacote `java.util.function` no seu IDE, ou acessar https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html[aqui].
+Entender este vocabulário faz toda a diferença na sua fluência em programação funcional.
