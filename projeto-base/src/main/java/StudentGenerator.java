@@ -17,15 +17,14 @@ public class StudentGenerator {
     private static final String[] NAMES_ARRAY = NAMES.split(";");
 
     /**
-     * Lista de cursos em que os alunos serão aleatoriamente matriculados.
+     * Lista de campi em de uma instituição de ensino.
      */
-    private static final Course[] COURSES = {
-            new Course(1, "Sistemas para Internet", 6),
-            new Course(2, "Engenharia Elétrica", 10),
-            new Course(3, "Engenharia Civil", 10),
-            new Course(4, "Matemática", 8),
-            new Course(5, "Educação Física", 8),
-            new Course(6, "Gestão Pública", 6)
+    private static final Campus[] CAMPI = {
+        new Campus(1, "Palmas"),
+        new Campus(2, "Porto Nacional"),
+        new Campus(3, "Paraíso do Tocantins"),
+        new Campus(4, "Gurupi"),
+        new Campus(5, "Araguaína")
     };
 
     /**
@@ -42,10 +41,19 @@ public class StudentGenerator {
      * @return a lista de alunos gerados
      */
     public static List<Student> generate(final int total){
+        final Course[] courses = {
+                new Course(1, "Sistemas para Internet", 6, randCampus()),
+                new Course(2, "Engenharia Elétrica", 10, randCampus()),
+                new Course(3, "Engenharia Civil", 10, randCampus()),
+                new Course(4, "Matemática", 8, randCampus()),
+                new Course(5, "Educação Física", 8, randCampus()),
+                new Course(6, "Gestão Pública", 6, randCampus())
+        };
+
         System.out.printf("Gerando %d alunos!\n", total);
         List<Student> list = new ArrayList<>(total);
         for (int i = 1; i <= total; i++) {
-            list.add(new Student(i, randName(), randGender(), randScore(), randGradYear(), randCourse(true)));
+            list.add(new Student(i, randName(), randGender(), randScore(), randGradYear(), randCourse(courses, true)));
         }
 
         return list;
@@ -85,18 +93,24 @@ public class StudentGenerator {
 
     /**
      * Escolhe um curso aleatório para um aluno.
+     *
+     * @param courses Lista de cursos existentes
      * @param enableNull Se true, indica que pode ser retornado um curso null.
      *                   Atribuindo tal resultado a um aluno, indica que
      *                   ele não está matriculado em nenhum curso.
      * @return
      */
-    private static Course randCourse(final boolean enableNull){
+    private static Course randCourse(final Course[] courses, final boolean enableNull){
         if(enableNull){
-            final int i = randInt(COURSES.length+1);
-            return i < COURSES.length ? COURSES[i] : null;
+            final int i = randInt(courses.length+1);
+            return i < courses.length ? courses[i] : null;
         }
 
-        return COURSES[randInt(COURSES.length)];
+        return courses[randInt(courses.length)];
+    }
+
+    private static Campus randCampus(){
+        return CAMPI[randInt(CAMPI.length)];
     }
 
     /**

@@ -7,14 +7,16 @@ public class Course{
     private int id;
     private String name;
     private int semesters;
+    private Campus campus;
 
     public Course(){
     }
 
-    public Course(int id, String name, int semesters){
+    public Course(int id, String name, int semesters, Campus campus){
         setId(id);
         setName(name);
         setSemesters(semesters);
+        setCampus(campus);
     }
 
     public int getId() {
@@ -39,6 +41,14 @@ public class Course{
 
     public final void setSemesters(int semesters) {
         this.semesters = semesters;
+    }
+
+    public Campus getCampus() {
+        return campus;
+    }
+
+    private void setCampus(Campus campus) {
+        this.campus = campus;
     }
 
     @Override
