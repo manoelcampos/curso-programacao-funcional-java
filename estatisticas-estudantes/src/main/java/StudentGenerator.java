@@ -35,6 +35,9 @@ public class StudentGenerator {
 
     /**
      * Gera uma lista aleatória de alunos.
+     * Alguns alunos podem não ser matriculados em curso nenhum,
+     * logo o atributo {@link Student#getCourse() course} será null.
+     *
      * @param total total de alunos que deseja gerar
      * @return a lista de alunos gerados
      */
@@ -42,7 +45,7 @@ public class StudentGenerator {
         System.out.printf("Gerando %d alunos!\n", total);
         List<Student> list = new ArrayList<>(total);
         for (int i = 1; i <= total; i++) {
-            list.add(new Student(i, randName(), randGender(), randScore(), randGradYear(), randCourse()));
+            list.add(new Student(i, randName(), randGender(), randScore(), randGradYear(), randCourse(true)));
         }
 
         return list;
@@ -82,9 +85,17 @@ public class StudentGenerator {
 
     /**
      * Escolhe um curso aleatório para um aluno.
+     * @param enableNull Se true, indica que pode ser retornado um curso null.
+     *                   Atribuindo tal resultado a um aluno, indica que
+     *                   ele não está matriculado em nenhum curso.
      * @return
      */
-    private static Course randCourse(){
+    private static Course randCourse(final boolean enableNull){
+        if(enableNull){
+            final int i = randInt(COURSES.length+1);
+            return i < COURSES.length ? COURSES[i] : null;
+        }
+
         return COURSES[randInt(COURSES.length)];
     }
 
