@@ -26,7 +26,7 @@ public class AppProgramacaoFuncional {
     }
 
     public static void main(String[] args) {
-
+        new AppProgramacaoFuncional();
     }
 
 }
