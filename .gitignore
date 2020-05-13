@@ -9,7 +9,6 @@ test-project/
 
 target/
 
-
 # Package Files #
 *.jar
 *.war
@@ -25,3 +24,6 @@ hs_err_pid*
 #IntelliJ Project Files
 *.iml
 .idea/
+
+#MacOS Files
+.DS_Store
