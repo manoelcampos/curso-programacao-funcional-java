@@ -23,9 +23,12 @@ Como as inscrições não estão abertas a todo momento, você pode não consegu
 Mas os vídeos estão disponíveis no https://youtube.com/playlist?list=PLMod1hYiIvSZL1xclvHcsV2dMiminf19x[YouTube].
 Apesar de serem em inglês, os vídeos contam com legendas oficiais (que podem ser traduzidas para o português).
 
-== Para quem seguiu os cursos apresentados acima
+== Interfaces Funcionais
 
 Ao iniciar em programação funcional no Java 8, é preciso aprender um novo vocabulário.
+
+image:interfaces-funcionais.png[link=https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html]
+
 Conhecendo os termos deste vocabulário, quando você vir um método que solicita como parâmetro um objeto:
 
 - `Predicate`, saberá que pode passar uma expressão lambda que representa uma função que recebe um objeto (como `Student`)
