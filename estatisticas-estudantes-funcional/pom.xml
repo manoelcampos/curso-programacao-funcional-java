@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.manoelcampos</groupId>
-    <artifactId>programacao-funcional</artifactId>
+    <artifactId>estatisticas-estudantes-programacao-funcional</artifactId>
     <version>1.0</version>
 
     <properties>
