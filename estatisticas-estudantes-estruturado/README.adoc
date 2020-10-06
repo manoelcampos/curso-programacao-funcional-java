@@ -1,0 +1,5 @@
+= Programação Funcional, Expressões Lambda e Streams no Java 8
+
+Esta é uma versão do projeto que não usa programação funcional,
+para poder comparar como o código é mais extenso e suscetível a erros
+que utilizando programação funcional.
