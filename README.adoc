@@ -1,8 +1,26 @@
+:source-highlighter: highlightjs
+:numbered:
+:icons: font
+
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
 = Programação Funcional, Expressões Lambda e Streams no Java 8
 
 Fornece um conjunto de projetos para permitir praticar a programação funcional no Java 8
 e entender o funcionamento de novos recursos da linguagem, como Streams e Expressões Lambda.
-Uma breve apresentação sobre Programação Funcional pode ser acessada link:programacao-funcional-java8.pptx[aqui].
+
+[NOTE]
+==== 
+- https://docs.google.com/presentation/d/e/2PACX-1vTJE9Dt23OdsfZda7mBuinRpy8BldyKlxfVbXalwZb2L4BFqVkkpb8SWBdIeWBhdfbl3RLOTv8J60Nd/pub?start=false&loop=false&delayms=3000[Apresentação e vídeo de introdução à programação funcional.]
+- link:programacao-funcional-java8.pptx[Breve apresentação sobre Programação Funcional em Java].
+====
 
 O recurso de Streams do Java 8 (não confundir com _InputStream_ e _OutputStream_ usados
 nos projetos de chat) permitem processamento de dados de forma sequencial e paralelo.
