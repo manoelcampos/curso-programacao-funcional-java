@@ -1,6 +1,6 @@
 = Programação Funcional, Expressões Lambda e Streams no Java 8
 
-Este é o mesmo projeto link:../estatisticas-estudantes[estatisticas-estudantes],
+Este é o mesmo projeto link:../estatisticas-estudantes-funcional[estatisticas-estudantes-funcional],
 mas a classe `AppProgramacaoFuncional` está praticamente vazia, tendo
 apenas o código que gera estudantes eleatoriamente.
 
