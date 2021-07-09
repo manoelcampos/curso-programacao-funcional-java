@@ -31,7 +31,6 @@ do estudante em programação.
 
 == Material de Apoio
 
-- https://docs.google.com/presentation/d/e/2PACX-1vTJE9Dt23OdsfZda7mBuinRpy8BldyKlxfVbXalwZb2L4BFqVkkpb8SWBdIeWBhdfbl3RLOTv8J60Nd/pub?start=false&loop=false&delayms=60000[Apresentação sobre os fundamentos de programação funcional].
 - https://www.oracle.com/technetwork/pt/articles/java/streams-api-java-8-3410098-ptb.html[Curso Streams e Expressões Lambda do Java 8]
 - http://bit.ly/2I2U5bU[Curso JDK 8 MOOC: Lambdas and Streams Introduction]
 - https://www.oracle.com/technical-resources/articles/java/ma14-java-se-8-streams.html[Processing Data with Java SE 8 Streams, Part 1]
