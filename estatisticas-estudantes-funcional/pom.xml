@@ -5,8 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.manoelcampos</groupId>
-    <artifactId>estatisticas-estudantes-programacao-funcional</artifactId>
-    <version>1.0</version>
+    <artifactId>estatisticas-estudantes-funcional</artifactId>
+    <description>
+        Projeto mostrando como usar programação funcional para
+        calcular estatísticas a partir de um conjunto de dados de alunos.
+        Demonstra como podemos escrever menos código, resolver problemas
+        de forma mais simples e ainda reduzir a probabilidade de bugs
+        usando programação funcional.
+    </description>
+    <version>1.0.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,10 +23,10 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.2</version>
+                <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>18</source>
+                    <target>18</target>
                 </configuration>
             </plugin>
         </plugins>
