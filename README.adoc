@@ -11,10 +11,9 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-= Programação Funcional, Expressões Lambda e Streams no Java 8
+= Programação Funcional, Expressões Lambda e Streams no Java 18
 
-Fornece um conjunto de projetos para permitir praticar a programação funcional no Java 8
-e entender o funcionamento de novos recursos da linguagem, como Streams e Expressões Lambda.
+Fornece um conjunto de projetos para permitir praticar programação funcional no Java 18 e entender o funcionamento de novos recursos da linguagem, como Streams e Expressões Lambda.
 
 [NOTE]
 ==== 
@@ -22,12 +21,7 @@ e entender o funcionamento de novos recursos da linguagem, como Streams e Expres
 - link:programacao-funcional-java8.pptx[Breve apresentação sobre Programação Funcional em Java].
 ====
 
-O recurso de Streams do Java 8 (não confundir com _InputStream_ e _OutputStream_ usados
-nos projetos de chat) permitem processamento de dados de forma sequencial e paralelo.
-Neste último caso, processamento paralelo (utilizando múltiplas CPUs de uma mesma máquina)
-tem tudo a ver com sistemas distribuídos.
-Desta forma, tais recursos são de fundamental importância para complementar a formação 
-do estudante em programação.
+O recurso de Streams introduzido no Java 8 (não confundir com _InputStream_ e _OutputStream_) permite processamento de dados de forma sequencial e paralelo. Neste último caso, processamento paralelo (utilizando múltiplas CPUs de uma mesma máquina) tem tudo a ver com sistemas distribuídos. Desta forma, tais recursos são de fundamental importância para complementar a formação do estudante em programação.
 
 == Material de Apoio
 
@@ -35,11 +29,9 @@ do estudante em programação.
 - http://bit.ly/2I2U5bU[Curso JDK 8 MOOC: Lambdas and Streams Introduction]
 - https://www.oracle.com/technical-resources/articles/java/ma14-java-se-8-streams.html[Processing Data with Java SE 8 Streams, Part 1]
 
-O primeiro link é um tutorial em português. O segundo é um curso completo em vídeo, mas em inglês.
-Acessando o segundo link você pode ter acesso aos slides do curso.
-Concluindo o curso você ganha um certificado de participação da Oracle.
-Como as inscrições não estão abertas a todo momento, você pode não conseguir acessar o material. 
-Mas os vídeos estão disponíveis no https://youtube.com/playlist?list=PLMod1hYiIvSZL1xclvHcsV2dMiminf19x[YouTube].
+O primeiro link é um tutorial em português. O segundo é um curso completo em vídeo, mas em inglês. Acessando o segundo link você pode ter acesso aos slides do curso. Concluindo o curso você ganha um certificado de participação da Oracle.
+
+Como as inscrições não estão abertas a todo momento, você pode não conseguir acessar o material. Mas os vídeos estão disponíveis no https://youtube.com/playlist?list=PLMod1hYiIvSZL1xclvHcsV2dMiminf19x[YouTube].
 Apesar de serem em inglês, os vídeos contam com legendas oficiais (que podem ser traduzidas para o português).
 
 == Interfaces Funcionais
