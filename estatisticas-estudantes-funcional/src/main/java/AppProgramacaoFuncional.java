@@ -66,7 +66,7 @@ public class AppProgramacaoFuncional {
                         .collect(Collectors.groupingBy(Student::getCourse));
         System.out.println("\nEstudantes por curso");
         estudantesAgrupadosPorCurso.forEach(
-                (course, students) -> System.out.printf("\tCurso: %-30s | Estudantes: %s\n", course.getName(), students)
+                (course, students) -> System.out.printf("\t%-30s: Estudantes: %s\n", course.getName(), students)
         );
     }
 
