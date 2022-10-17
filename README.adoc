@@ -17,8 +17,8 @@ Fornece um conjunto de projetos para permitir praticar programação funcional n
 
 [NOTE]
 ==== 
-- https://docs.google.com/presentation/d/e/2PACX-1vTJE9Dt23OdsfZda7mBuinRpy8BldyKlxfVbXalwZb2L4BFqVkkpb8SWBdIeWBhdfbl3RLOTv8J60Nd/pub?start=false&loop=false&delayms=3000[Apresentação e vídeo de introdução à programação funcional.]
-- link:programacao-funcional-java8.pptx[Breve apresentação sobre Programação Funcional em Java].
+- https://youtu.be/sRHEVmzynKU[Vídeo de introdução à programação funcional.]
+- https://docs.google.com/presentation/d/1toGU4i7mxv4WNSrfWsf7lgrqUSn4wAKlp2c0rAeczNY[Slides Programação Funcional em Java].
 ====
 
 O recurso de Streams introduzido no Java 8 (não confundir com _InputStream_ e _OutputStream_) permite processamento de dados de forma sequencial e paralelo. Neste último caso, processamento paralelo (utilizando múltiplas CPUs de uma mesma máquina) tem tudo a ver com sistemas distribuídos. Desta forma, tais recursos são de fundamental importância para complementar a formação do estudante em programação.
