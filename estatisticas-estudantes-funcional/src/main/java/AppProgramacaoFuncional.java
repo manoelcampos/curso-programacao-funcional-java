@@ -121,6 +121,17 @@ public class AppProgramacaoFuncional {
     private void imprimeMaiorNota() {
         final double maior =
                 students.stream()
+                        .parallel()
+                        .mapToDouble(Student::getScore)
+                        .max()
+                        .orElse(0);
+        System.out.printf("Maior nota entre todos os Estudantes: %.2f\n", maior);
+    }
+
+    private void imprimeMaiorNotaHomens() {
+        final double maior =
+                students.stream()
+                        .filter(s -> s.getGender() == 'M')
                         .mapToDouble(Student::getScore)
                         .max()
                         .orElse(0);
