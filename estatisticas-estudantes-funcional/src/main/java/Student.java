@@ -63,6 +63,19 @@ public class Student{
         this.gender = gender;
     }
 
+    public boolean isMale(){
+        return gender == 'M' || gender == 'm';
+    }
+
+    public boolean isFemale(){
+        return gender == 'F' || gender == 'f';
+    }
+
+    public boolean hasCourse(){
+        return course != null;
+    }
+
+
     public double getScore() {
         return score;
     }
