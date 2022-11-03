@@ -1,9 +1,16 @@
+import java.util.Comparator;
+
 /**
  * Representa um curso de uma instituição de ensino.
+ * Fazer a classe implementar {@Comparable} é opcional.
+ * Isto permite definir uma ordenação padrão quando
+ * for preciso ordenar uma coleção de cursos,
+ * por exemplo usando {@link java.util.List#sort(Comparator)}
+ * ou {@link java.util.stream.Stream#sorted(Comparator)}.
  *
  * @author Manoel Campos da Silva Filho
  */
-public class Course{
+public class Course implements Comparable<Course> {
     private int id;
     private String name;
     private int semesters;
@@ -54,5 +61,14 @@ public class Course{
     @Override
     public String toString(){
         return String.format("Id: %6d Nome: %-30s Semestres: %4d", id, name, semesters);
+    }
+
+    @Override
+    public int compareTo(final Course other) {
+        //Se other é nulo, retorna um valor != de zero para indicar que não são iguais
+        if(other == null)
+            return 1;
+
+        return this.name.compareTo(other.name);
     }
 }
