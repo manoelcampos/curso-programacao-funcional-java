@@ -1,5 +1,4 @@
 import java.util.List;
-import java.util.function.Predicate;;
 
 /**
  * Aplicação de exemplo de princípios de programação funcional em Java,
