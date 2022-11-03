@@ -3,6 +3,9 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.averagingDouble;
+import static java.util.stream.Collectors.groupingBy;
+
 
 /**
  *
@@ -87,7 +90,7 @@ public class AppProgramacaoFuncional {
     private void imprimeEstudantesPorSexo() {
         final Map<Character, List<Student>> estudantesPorSexo =
                 students.stream()
-                        .collect(Collectors.groupingBy(Student::getGender));
+                        .collect(groupingBy(Student::getGender));
         System.out.println("\nEstudantes por sexo");
         estudantesPorSexo.forEach((gender, students) -> System.out.printf("\tSexo: %c | Estudantes: %s\n", gender, students));
     }
@@ -96,17 +99,17 @@ public class AppProgramacaoFuncional {
         final Map<Course, Long> totalEstudantesPorCurso =
                 students.stream()
                         .filter(s -> s.getCourse() != null)
-                        .collect(Collectors.groupingBy(Student::getCourse, Collectors.counting()));
+                        .collect(groupingBy(Student::getCourse, Collectors.counting()));
         System.out.println("\nTotal de Estudantes por Curso");
         totalEstudantesPorCurso.forEach(
-                (course, totalAlunos) -> System.out.printf("\tCurso: %-30s | Total de Estudantes: %d\n", course.getName(), totalAlunos)
+            (course, totalAlunos) -> System.out.printf("\tCurso: %-30s | Total de Estudantes: %d\n", course.getName(), totalAlunos)
         );
     }
 
     private void imprimeMediaNotasAgrupandoPorSexo() {
         Map<Character, Double> mapMediaPorSexo =
                 students.stream()
-                        .collect(Collectors.groupingBy(Student::getGender, Collectors.averagingDouble(Student::getScore)));
+                        .collect(groupingBy(Student::getGender, averagingDouble(Student::getScore)));
         mapMediaPorSexo.forEach((sexo, media) -> System.out.printf("%c: %.2f%n", sexo, media));
     }
 
@@ -138,7 +141,7 @@ public class AppProgramacaoFuncional {
         final Map<Course, List<Student>> estudantesAgrupadosPorCurso =
                 students.stream()
                         .filter(Student::hasCourse)
-                        .collect(Collectors.groupingBy(Student::getCourse));
+                        .collect(groupingBy(Student::getCourse));
         System.out.println("\nEstudantes por curso");
         estudantesAgrupadosPorCurso.forEach(
                 (course, students) -> System.out.printf("\t%-30s: Estudantes: %s\n", course.getName(), students)
