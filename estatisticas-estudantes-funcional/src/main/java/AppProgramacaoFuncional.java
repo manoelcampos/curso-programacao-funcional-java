@@ -3,8 +3,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.averagingDouble;
-import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.*;
 
 
 /**
@@ -99,7 +98,7 @@ public class AppProgramacaoFuncional {
         final Map<Course, Long> totalEstudantesPorCurso =
                 students.stream()
                         .filter(s -> s.getCourse() != null)
-                        .collect(groupingBy(Student::getCourse, Collectors.counting()));
+                        .collect(groupingBy(Student::getCourse, counting()));
         System.out.println("\nTotal de Estudantes por Curso");
         totalEstudantesPorCurso.forEach(
             (course, totalAlunos) -> System.out.printf("\tCurso: %-30s | Total de Estudantes: %d\n", course.getName(), totalAlunos)
