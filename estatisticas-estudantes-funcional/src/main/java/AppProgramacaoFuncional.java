@@ -1,3 +1,4 @@
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -31,6 +32,7 @@ public class AppProgramacaoFuncional {
         imprimeTotalEstudantesPorCurso();
         imprimeMediaNotasAgrupandoPorSexo();
         imprimeEstudantesPorSexo();
+        imprimeCursosComEstudantesOrdenado();
     }
 
     private void imprimeMaiorNota() {
@@ -156,6 +158,21 @@ public class AppProgramacaoFuncional {
                         .distinct()
                         .count();
         System.out.printf("Campi em que há Estudantes: %d\n", totalCampiComAlunos);
+    }
+
+    private void imprimeCursosComEstudantesOrdenado() {
+        var comparator = Comparator.comparingInt(Course::getId)
+                                   .thenComparing(Course::getName);
+
+        var courses = students.stream()
+                              .map(Student::getCourse)
+                              .filter(Objects::nonNull)
+                              .distinct()
+                              .sorted(comparator)
+                              .toList();
+
+        System.out.printf("%nCursos com estudantes matriculados (ordenado por id e nome)%n");
+        courses.forEach(System.out::println);
     }
 
     public static void main(String[] args) {
