@@ -46,7 +46,7 @@ public class AppProgramacaoFuncional {
     private void imprimeMaiorNotaHomens() {
         final double maior =
                 students.stream()
-                        .filter(s -> s.getGender() == 'M')
+                        .filter(Student::isMale)
                         .mapToDouble(Student::getScore)
                         .max()
                         .orElse(0);
@@ -56,7 +56,7 @@ public class AppProgramacaoFuncional {
     private void imprimeTotalHomens() {
         final long totalHomens =
                 students.stream()
-                        .filter(s -> s.getGender() == 'M')
+                        .filter(Student::isMale)
                         .count();
         System.out.println("Total de Homens: " + totalHomens);
     }
@@ -64,7 +64,7 @@ public class AppProgramacaoFuncional {
     private void imprimeTotalMulheres() {
         final long totalMulheres =
                 students.stream()
-                        .filter(s -> s.getGender() == 'F')
+                        .filter(Student::isFemale)
                         .count();
         System.out.println("Total de Mulheres: " + totalMulheres);
     }
