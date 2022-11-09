@@ -13,6 +13,8 @@ endif::[]
 
 = Programação Funcional, Expressões Lambda e Streams no Java 18 image:https://img.shields.io/github/workflow/status/manoelcampos/programacao-funcional-java/build[GitHub Workflow Status]
 
+https://gitpod.io/#https://github.com/manoelcampos/programacao-funcional-java[image:https://gitpod.io/button/open-in-gitpod.svg[]]
+
 Fornece um conjunto de projetos para permitir praticar programação funcional no Java 18 e entender o funcionamento de novos recursos da linguagem, como Streams e Expressões Lambda.
 
 [NOTE]
