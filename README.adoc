@@ -1,6 +1,7 @@
 :source-highlighter: highlightjs
 :numbered:
 :icons: font
+:jdk_version: 19
 
 ifdef::env-github[]
 :outfilesuffix: .adoc
@@ -11,11 +12,11 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-= Programação Funcional, Expressões Lambda e Streams no Java 18 image:https://img.shields.io/github/workflow/status/manoelcampos/programacao-funcional-java/build[GitHub Workflow Status]
+= Programação Funcional, Expressões Lambda e Streams no Java {jdk_version} image:https://img.shields.io/github/workflow/status/manoelcampos/programacao-funcional-java/build[GitHub Workflow Status]
 
 https://gitpod.io/#https://github.com/manoelcampos/programacao-funcional-java[image:https://gitpod.io/button/open-in-gitpod.svg[]]
 
-Fornece um conjunto de projetos para permitir praticar programação funcional no Java 18 e entender o funcionamento de novos recursos da linguagem, como Streams e Expressões Lambda.
+Fornece um conjunto de projetos para permitir praticar programação funcional no Java {jdk_version} e entender o funcionamento de novos recursos da linguagem, como Streams e Expressões Lambda.
 
 [NOTE]
 ==== 
@@ -38,7 +39,7 @@ Apesar de serem em inglês, os vídeos contam com legendas oficiais (que podem s
 
 == Interfaces Funcionais
 
-Ao iniciar em programação funcional no Java 8, é preciso aprender um novo vocabulário.
+Ao iniciar em programação funcional no Java 8+, é preciso aprender um novo vocabulário.
 
 image:interfaces-funcionais.png[link=https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html]
 
