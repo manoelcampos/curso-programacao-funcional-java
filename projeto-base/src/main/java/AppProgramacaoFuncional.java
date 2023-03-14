@@ -1,5 +1,8 @@
 import java.util.List;
 
+import static java.util.stream.Collectors.averagingDouble;
+import static java.util.stream.Collectors.groupingBy;
+
 /**
  * Aplicação de exemplo de princípios de programação funcional em Java,
  * Expressões Lambda e API de Streams do Java 8.
@@ -17,11 +20,29 @@ import java.util.List;
  * @author Manoel Campos da Silva Filho
  */
 public class AppProgramacaoFuncional {
-    private static final int TOTAL_STUDENTS = 1000;
+    private static final int TOTAL_STUDENTS = 10;
     private final List<Student> students;
 
     public AppProgramacaoFuncional(){
         students = StudentGenerator.generate(TOTAL_STUDENTS);
+
+        var estudantes = students
+                            .stream()
+                            .filter(Student::hasCourse)
+                            .collect(
+                                    groupingBy(
+                                            Student::getCourse,
+                                            averagingDouble(Student::getScore)
+                                    )
+                            );
+
+        estudantes.forEach((course, average) -> System.out.println(course.getName() + ": " + average));
+
+        /*
+        paraiso
+        palmas
+        */
+
     }
 
     public static void main(String[] args) {

@@ -95,6 +95,10 @@ public class Student{
         return gender == 'F';
     }
 
+    public boolean hasCourse() {
+        return course != null;
+    }
+
     @Override
     public String toString(){
         final String courseName = String.format("%-35s", course == null ? "" : "Curso: " + course.getName());
