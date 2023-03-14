@@ -16,7 +16,19 @@ endif::[]
 
 https://gitpod.io/#https://github.com/manoelcampos/programacao-funcional-java[image:https://gitpod.io/button/open-in-gitpod.svg[]]
 
-Fornece um conjunto de projetos para permitir praticar programação funcional no Java {jdk_version} e entender o funcionamento de novos recursos da linguagem, como Streams e Expressões Lambda.
+Programação funcional é um paradigma que tem suas origens em fundamentos matemáticos da década de 1930.
+Mas tal paradigma se popularizou possivelmente apenas na última década.
+Ele permite criar software de forma mais clara, com menos código e menor complexidade por meio de reaproveitamento e composição de funções.
+Tal paradigma além de facilitar e agilizar a escrita de código, tende a gerar software com menos bugs e mais fácil de manter.
+
+Programação orientada a objetos é o paradigma mais utilizado para desenvolvimento de software.
+Mas assim como programação estruturada também é utilizada em conjunto com tal paradigma,
+programação funcional é um recurso a mais que pode utilizar em softwares 
+que seguem programação estruturae e/ou orientada a objetos.
+
+Se você não conhece programação funcional ainda, você está sofrendo mais do que deveria para desenvolver software.
+
+Este repositório fornece um projeto para permitir praticar programação funcional no Java {jdk_version} e entender o funcionamento de novos recursos da linguagem, como Streams e Expressões Lambda.
 
 [NOTE]
 ==== 
