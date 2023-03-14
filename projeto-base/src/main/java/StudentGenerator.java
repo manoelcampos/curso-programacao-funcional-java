@@ -61,14 +61,14 @@ public class StudentGenerator {
         System.out.printf("Gerando %d estudantes!\n", total);
         final List<Student> list = new ArrayList<>(total);
         for (int i = 1; i <= total; i++) {
-            final Student student = generat(i);
+            final Student student = randStudent(i);
             list.add(student);
         }
 
         return list;
     }
 
-    private static Student generat(final int id) {
+    public static Student randStudent(final int id) {
         final char gender = randGender();
         return new Student(id, randName(gender), gender, randScore(), randGradYear(), randCourse(courses, true));
     }
