@@ -64,3 +64,10 @@ faz qualquer coisa com ele (consome) e não retorna nada (`void`).
 
 Assim, para entender este novo vocabulário, você poderá ver o JavaDoc do pacote `java.util.function` no seu IDE, ou acessar https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html[aqui].
 Entender este vocabulário faz toda a diferença na sua fluência em programação funcional.
+
+== Novidades da Linguagem Java
+
+O JDK há bastante tempo passou a ter um ciclo de releases que ocorre a cada 6 meses,
+incluindo muitas melhorias e recursos incríveis.
+Se você quer ficar por dentro das novidades em cada nova versão do JDK,
+veja https://github.com/manoelcampos/jdk-new-features[este repositório] (apenas em inglês).
