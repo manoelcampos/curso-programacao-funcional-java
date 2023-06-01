@@ -12,7 +12,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-= Programação Funcional, Expressões Lambda e Streams no Java {jdk_version} image:https://img.shields.io/github/workflow/status/manoelcampos/programacao-funcional-java/build[GitHub Workflow Status]
+= Programação Funcional, Expressões Lambda e Streams no Java {jdk_version} image:https://img.shields.io/github/actions/workflow/status/manoelcampos/programacao-funcional-java/build.yml?branch=master[GitHub Workflow Status]
 
 https://gitpod.io/#https://github.com/manoelcampos/programacao-funcional-java[image:https://gitpod.io/button/open-in-gitpod.svg[]]
 
