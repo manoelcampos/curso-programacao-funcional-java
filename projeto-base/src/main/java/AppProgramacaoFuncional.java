@@ -21,22 +21,22 @@ import static java.util.stream.Collectors.groupingBy;
  */
 public class AppProgramacaoFuncional {
     private static final int TOTAL_STUDENTS = 10;
-    private final List<Student> students;
+    private final List<Estudante> estudantes;
 
     public AppProgramacaoFuncional(){
-        students = StudentGenerator.generate(TOTAL_STUDENTS);
+        estudantes = StudentGenerator.generate(TOTAL_STUDENTS);
 
-        var estudantes = students
+        var estudantes = estudantes
                             .stream()
-                            .filter(Student::hasCourse)
+                            .filter(Estudante::hasCourse)
                             .collect(
                                     groupingBy(
-                                            Student::getCourse,
-                                            averagingDouble(Student::getScore)
+                                            Estudante::getCourse,
+                                            averagingDouble(Estudante::getNota)
                                     )
                             );
 
-        estudantes.forEach((course, average) -> System.out.println(course.getName() + ": " + average));
+        estudantes.forEach((course, average) -> System.out.println(course.getNome() + ": " + average));
 
         /*
         paraiso

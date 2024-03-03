@@ -8,12 +8,13 @@ import java.util.*;
  */
 public class AppProgramacaoEstruturada {
     private static final int TOTAL_STUDENTS = 1000;
-    private final List<Student> students;
+    private final List<Estudante> estudantes;
 
     public AppProgramacaoEstruturada(){
-        students = StudentGenerator.generate(TOTAL_STUDENTS);
+        estudantes = StudentGenerator.generate(TOTAL_STUDENTS);
 
         imprimeMaiorNota();
+        imprimeMaiorHomens();
         imprimeTotalHomens();
         imprimeTotalMulheres();
         imprimeTotalCampiComAlunos();
@@ -26,9 +27,9 @@ public class AppProgramacaoEstruturada {
     }
 
     private void imprimeEstudantesPorSexo() {
-        final Map<Character, List<Student>> estudantesPorSexo = new HashMap<>();
-        for (Student student : students) {
-            estudantesPorSexo.computeIfAbsent(student.getGender(), k -> new ArrayList<>()).add(student);
+        final Map<Character, List<Estudante>> estudantesPorSexo = new HashMap<>();
+        for (Estudante estudante : estudantes) {
+            estudantesPorSexo.computeIfAbsent(estudante.getSexo(), k -> new ArrayList<>()).add(estudante);
         }
 
         System.out.println("\nEstudantes por sexo");
@@ -38,8 +39,8 @@ public class AppProgramacaoEstruturada {
     }
 
     private void imprimeTotalEstudantesPorCurso() {
-        final Map<Course, Long> totalEstudantesPorCurso = new HashMap<>();
-        for (Student s : students) {
+        final Map<Curso, Long> totalEstudantesPorCurso = new HashMap<>();
+        for (Estudante s : estudantes) {
             if (s.getCourse() != null) {
                 totalEstudantesPorCurso.merge(s.getCourse(), 1L, Long::sum);
             }
@@ -47,8 +48,8 @@ public class AppProgramacaoEstruturada {
 
         System.out.println("\nTotal de Estudantes por Curso");
         totalEstudantesPorCurso.forEach(
-            (course, totalAlunos) -> {
-                System.out.printf("\tCurso: %-30s | Total de Estudantes: %d\n", course.getName(), totalAlunos);
+            (curso, totalAlunos) -> {
+                System.out.printf("\tCurso: %-30s | Total de Estudantes: %d\n", curso.getNome(), totalAlunos);
             }
         );
     }
@@ -56,11 +57,11 @@ public class AppProgramacaoEstruturada {
     private void imprimeEstudantesAprovadosPalmas() {
         System.out.println();
         StringJoiner joiner = new StringJoiner(", ");
-        for (Student s : students) {
-            if (s.getScore() > 9) {
+        for (Estudante s : estudantes) {
+            if (s.getNota() > 9) {
                 if (s.getCourse() != null) {
                     if (s.getCourse().getCampus().getId() == 1) {
-                        String name = s.getName();
+                        String name = s.getNome();
                         joiner.add(name);
                     }
                 }
@@ -72,8 +73,8 @@ public class AppProgramacaoEstruturada {
     }
 
     private void imprimeEstudantesPorCurso() {
-        final Map<Course, List<Student>> estudantesAgrupadosPorCurso = new HashMap<>();
-        for (Student s : students) {
+        final Map<Curso, List<Estudante>> estudantesAgrupadosPorCurso = new HashMap<>();
+        for (Estudante s : estudantes) {
             if (s.getCourse() != null) {
                 estudantesAgrupadosPorCurso.computeIfAbsent(s.getCourse(), k -> new ArrayList<>()).add(s);
             }
@@ -81,17 +82,17 @@ public class AppProgramacaoEstruturada {
 
         System.out.println("\nEstudantes por curso");
         estudantesAgrupadosPorCurso.forEach(
-                (course, students) -> System.out.printf("\t%-30s | Estudantes: %s\n", course.getName(), students)
+                (curso, students) -> System.out.printf("\t%-30s | Estudantes: %s\n", curso.getNome(), students)
         );
     }
 
     private void imprimeEstudantesAprovadosTSI() {
-        final List<Student> alunosSistemasInternet = new ArrayList<>();
-        for (Student student : students) {
-            if (student.getCourse() != null) {
-                if (student.getCourse().getId() == 1) {
-                    if (student.getScore() >= 6) {
-                        alunosSistemasInternet.add(student);
+        final List<Estudante> alunosSistemasInternet = new ArrayList<>();
+        for (Estudante estudante : estudantes) {
+            if (estudante.getCourse() != null) {
+                if (estudante.getCourse().getId() == 1) {
+                    if (estudante.getNota() >= 6) {
+                        alunosSistemasInternet.add(estudante);
                     }
                 }
             }
@@ -104,9 +105,9 @@ public class AppProgramacaoEstruturada {
 
     private void imprimeTotalEstudantesMatriculados() {
         long totalEstudantesMatriculados = 0;
-        for (Student student : students) {
-            Course course = student.getCourse();
-            if (course != null) {
+        for (Estudante estudante : estudantes) {
+            Curso curso = estudante.getCourse();
+            if (curso != null) {
                 totalEstudantesMatriculados++;
             }
         }
@@ -116,10 +117,10 @@ public class AppProgramacaoEstruturada {
     private void imprimeTotalCampiComAlunos() {
         long totalCampiComAlunos = 0;
         Set<Campus> campiSet = new HashSet<>();
-        for (Student student : students) {
-            Course course = student.getCourse();
-            if (course != null) {
-                Campus campus = course.getCampus();
+        for (Estudante estudante : estudantes) {
+            Curso curso = estudante.getCourse();
+            if (curso != null) {
+                Campus campus = curso.getCampus();
                 if (campiSet.add(campus)) {
                     totalCampiComAlunos++;
                 }
@@ -130,8 +131,8 @@ public class AppProgramacaoEstruturada {
 
     private void imprimeTotalMulheres() {
         long totalMulheres = 0;
-        for (Student s : students) {
-            if (s.getGender() == 'F') {
+        for (Estudante s : estudantes) {
+            if (s.getSexo() == 'F') {
                 totalMulheres++;
             }
         }
@@ -140,8 +141,8 @@ public class AppProgramacaoEstruturada {
 
     private void imprimeTotalHomens() {
         long totalHomens = 0;
-        for (Student s : students) {
-            if (s.getGender() == 'M') {
+        for (Estudante s : estudantes) {
+            if (s.getSexo() == 'M') {
                 totalHomens++;
             }
         }
@@ -150,12 +151,22 @@ public class AppProgramacaoEstruturada {
 
     private void imprimeMaiorNota() {
         double maiorNota = 0;
-        for (Student student : students) {
-            if (student.getScore() > maiorNota) {
-                maiorNota = student.getScore();
+        for (Estudante estudante : estudantes) {
+            if (estudante.getNota() > maiorNota) {
+                maiorNota = estudante.getNota();
             }
         }
         System.out.printf("Maior nota entre todos os Estudantes: %.2f\n", maiorNota);
+    }
+
+    private void imprimeMaiorHomens() {
+        double maiorNota = 0;
+        for (Estudante estudante : estudantes) {
+            if (estudante.getSexo() == 'M' && estudante.getNota() > maiorNota) {
+                maiorNota = estudante.getNota();
+            }
+        }
+        System.out.printf("Maior nota entre homens: %.2f\n", maiorNota);
     }
 
     public static void main(String[] args) {

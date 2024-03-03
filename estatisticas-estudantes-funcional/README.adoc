@@ -5,6 +5,6 @@ Como para trabalhar com `Streams` precisamos de dados para processar, a classe l
 para gerar dados de estudantes aleatoriamente (esta é uma classe bastante interessante, ela gera nome, nota, sexo e outros dados de forma aleatória). 
 Para mais detalhes, veja a documentação das classes.
 
-O projeto apenas fornece as classes link:src/main/java/Student.java[Student] e link:src/main/java/Course.java[Course] que representam estudantes e cursos. 
+O projeto apenas fornece as classes link:src/main/java/Estudante.java[Estudante] e link:src/main/java/Curso.java[Curso] que representam estudantes e cursos.
 Por fim a classe link:src/main/java/AppProgramacaoFuncional.java[AppProgramacaoFuncional] posui uma lista de estudantes gerados aleatoriamente. 
 A partir desta lista, você terá dados suficientes para poder brincar com estes novos recursos da linguagem Java.

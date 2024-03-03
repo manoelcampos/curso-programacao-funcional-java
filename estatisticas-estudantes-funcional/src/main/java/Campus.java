@@ -5,13 +5,13 @@
  */
 public class Campus {
     private int id;
-    private String name;
+    private String nome;
 
     public Campus(){}
 
-    public Campus(int id, String name){
+    public Campus(int id, String nome){
         this.id = id;
-        this.name = name;
+        this.nome = nome;
     }
 
     public int getId() {
@@ -22,11 +22,11 @@ public class Campus {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }

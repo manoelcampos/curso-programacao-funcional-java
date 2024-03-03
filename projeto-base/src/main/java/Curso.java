@@ -10,19 +10,19 @@ import java.util.Comparator;
  *
  * @author Manoel Campos da Silva Filho
  */
-public class Course implements Comparable<Course> {
+public class Curso implements Comparable<Curso> {
     private int id;
-    private String name;
-    private int semesters;
+    private String nome;
+    private int semestres;
     private Campus campus;
 
-    public Course(){
+    public Curso(){
     }
 
-    public Course(int id, String name, int semesters, Campus campus){
+    public Curso(int id, String nome, int semestres, Campus campus){
         setId(id);
-        setName(name);
-        setSemesters(semesters);
+        setNome(nome);
+        setSemestres(semestres);
         setCampus(campus);
     }
 
@@ -34,20 +34,20 @@ public class Course implements Comparable<Course> {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public final void setName(String name) {
-        this.name = name;
+    public final void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public int getSemesters() {
-        return semesters;
+    public int getSemestres() {
+        return semestres;
     }
 
-    public final void setSemesters(int semesters) {
-        this.semesters = semesters;
+    public final void setSemestres(int semestres) {
+        this.semestres = semestres;
     }
 
     public Campus getCampus() {
@@ -60,15 +60,15 @@ public class Course implements Comparable<Course> {
 
     @Override
     public String toString(){
-        return String.format("Id: %6d Nome: %-30s Semestres: %4d", id, name, semesters);
+        return String.format("Id: %6d Nome: %-30s Semestres: %4d", id, nome, semestres);
     }
 
     @Override
-    public int compareTo(final Course other) {
+    public int compareTo(final Curso other) {
         //Se other é nulo, retorna um valor != de zero para indicar que não são iguais
         if(other == null)
             return 1;
 
-        return this.name.compareTo(other.name);
+        return this.nome.compareTo(other.nome);
     }
 }
