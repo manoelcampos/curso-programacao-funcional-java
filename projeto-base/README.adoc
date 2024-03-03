@@ -1,9 +1,0 @@
-= Programação Funcional, Expressões Lambda e Streams no Java 17
-
-Este é o mesmo projeto link:../estatisticas-estudantes-funcional[estatisticas-estudantes-funcional],
-mas a classe `AppProgramacaoFuncional` está praticamente vazia, tendo
-apenas o código que gera estudantes eleatoriamente.
-
-O projeto deve servir de base para você escrever seu próprio código,
-usando programação funcional, para processar esta lista de estudantes gerados.
-Acesse o link acima para ver a documentação do projeto.
