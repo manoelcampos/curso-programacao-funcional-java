@@ -32,7 +32,7 @@ Este repositório fornece um projeto para permitir praticar programação funcio
 
 [NOTE]
 ==== 
-- https://youtu.be/sRHEVmzynKU[Vídeo de introdução à programação funcional.]
+- https://www.youtube.com/watch?v=wbcRS7N4uqA&list=PLyo0RUAM69UtVR8knBrUgjQbQQECatElL[Curso Programação Funcional em Java (e JS) no YouTube]
 - https://docs.google.com/presentation/d/1toGU4i7mxv4WNSrfWsf7lgrqUSn4wAKlp2c0rAeczNY[Slides Programação Funcional em Java].
 ====
 
