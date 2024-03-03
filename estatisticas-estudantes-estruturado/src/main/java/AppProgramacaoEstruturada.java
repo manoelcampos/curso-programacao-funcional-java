@@ -14,6 +14,7 @@ public class AppProgramacaoEstruturada {
         estudantes = StudentGenerator.generate(TOTAL_STUDENTS);
 
         imprimeMaiorNota();
+        imprimeMaiorNotaHomens();
         imprimeMaiorHomens();
         imprimeTotalHomens();
         imprimeTotalMulheres();
@@ -157,6 +158,16 @@ public class AppProgramacaoEstruturada {
             }
         }
         System.out.printf("Maior nota entre todos os Estudantes: %.2f\n", maiorNota);
+    }
+
+    private void imprimeMaiorNotaHomens() {
+        double maiorNota = 0;
+        for (Estudante estudante : estudantes) {
+            if (estudante.getSexo() == 'M' && estudante.getNota() > maiorNota) {
+                maiorNota = estudante.getNota();
+            }
+        }
+        System.out.printf("Maior nota eentre Homens: %.2f\n", maiorNota);
     }
 
     private void imprimeMaiorHomens() {

@@ -47,8 +47,8 @@ public class AppProgramacaoFuncional {
     private void imprimeMaiorNotaHomens() {
         final double maior =
                 estudantes.stream()
-                          .filter(Estudante::isHomem)
-                          .mapToDouble(Estudante::getNota)
+                          .filter((Estudante e) -> e.getSexo() == 'M')
+                          .mapToDouble((Estudante e) -> e.getNota())
                           .max()
                           .orElse(0);
         System.out.printf("Maior nota entre todos os Estudantes: %.2f\n", maior);
