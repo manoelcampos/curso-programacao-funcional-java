@@ -38,6 +38,10 @@ Este repositório fornece um projeto para permitir praticar programação funcio
 
 O recurso de Streams introduzido no Java 8 (não confundir com _InputStream_ e _OutputStream_) permite processamento de dados de forma sequencial e paralelo. Neste último caso, processamento paralelo (utilizando múltiplas CPUs de uma mesma máquina) tem tudo a ver com sistemas distribuídos. Desta forma, tais recursos são de fundamental importância para complementar a formação do estudante em programação.
 
+== Projeto Base
+
+Se quiser baixar o projeto vazio (somente com a parte de geração de estudantes aleatórios) para praticar, acesse https://github.com/manoelcampos/programacao-funcional-java-projeto-base.
+
 == Material de Apoio
 
 - https://www.oracle.com/br/technical-resources/articles/java-stream-api.html[Curso Streams e Expressões Lambda do Java 8]
