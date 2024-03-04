@@ -1,7 +1,7 @@
 :source-highlighter: highlightjs
 :numbered:
 :icons: font
-:jdk_version: 19
+:jdk_version: 17+
 
 ifdef::env-github[]
 :outfilesuffix: .adoc
@@ -12,7 +12,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-= Programação Funcional, Expressões Lambda e Streams no Java {jdk_version} image:https://img.shields.io/github/actions/workflow/status/manoelcampos/programacao-funcional-java/build.yml?branch=master[GitHub Workflow Status]
+= Programação Funcional, Expressões Lambda e Streams em Java {jdk_version} image:https://img.shields.io/github/actions/workflow/status/manoelcampos/programacao-funcional-java/build.yml?branch=master[GitHub Workflow Status]
 
 https://gitpod.io/#https://github.com/manoelcampos/programacao-funcional-java[image:https://gitpod.io/button/open-in-gitpod.svg[]]
 
