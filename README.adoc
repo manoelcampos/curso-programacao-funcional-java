@@ -40,9 +40,9 @@ O recurso de Streams introduzido no Java 8 (não confundir com _InputStream_ e _
 
 == Repositórios com exercícios das aulas
 
-- [Aula 01: Soma do dobro dos números pares em JS](https://github.com/manoelcampos/fp-aula-01-soma-dobro-pares-js)
-- [Aula 02: Imutabilidade em Java](https://github.com/manoelcampos/fp-aula-02-imutabilidade-java)
-- [Aula 04: Lambda e Streams em Java](https://github.com/manoelcampos/fp-aula-04-java-projeto-base/tree/main)
+- https://github.com/manoelcampos/fp-aula-01-soma-dobro-pares-js[Aula 01: Soma do dobro dos números pares em JS]
+- https://github.com/manoelcampos/fp-aula-02-imutabilidade-java[Aula 02: Imutabilidade em Java]
+- https://github.com/manoelcampos/fp-aula-04-java-projeto-base/tree/main[Aula 04: Lambda e Streams em Java]
 
 == Material de Apoio
 
