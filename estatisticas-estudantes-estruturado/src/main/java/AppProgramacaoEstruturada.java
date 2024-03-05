@@ -11,7 +11,7 @@ public class AppProgramacaoEstruturada {
     private final List<Estudante> estudantes;
 
     public AppProgramacaoEstruturada(){
-        estudantes = StudentGenerator.generate(TOTAL_STUDENTS);
+        estudantes = new StudentGenerator().generate(TOTAL_STUDENTS);
 
         imprimeMaiorNota();
         imprimeMaiorNotaHomens();

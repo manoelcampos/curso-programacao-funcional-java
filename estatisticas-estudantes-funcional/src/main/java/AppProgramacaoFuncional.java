@@ -16,7 +16,7 @@ public class AppProgramacaoFuncional {
     private final List<Estudante> estudantes;
 
     public AppProgramacaoFuncional(){
-        estudantes = StudentGenerator.generate(TOTAL_STUDENTS);
+        estudantes = new StudentGenerator().generate(TOTAL_STUDENTS);
         System.out.println();
 
         imprimeMaiorNota();
