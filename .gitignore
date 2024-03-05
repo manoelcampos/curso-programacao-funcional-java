@@ -1,7 +1,9 @@
 test-project/
+aula-*
+aulas-*
+exemplos
+*.pdf
 
-# O projeto agora tem repositório próprio
-projeto-base/
 ~$*
 
 # Compiled class file

@@ -1,0 +1,90 @@
+# Plano de Ensino Sistemas Distribuídos
+
+## Ementa
+
+Preparar aulas a partir da seção "Conteúdo Programático"
+
+- Introdução e benefícios da programação funcional. 
+- Fundamentos da programação funcional em linguagens dinâmica e estaticamente tipadas. 
+- Imutabilidade e corretude de software. 
+- Funções puras. Funções como elementos de primeira classe. 
+- Referências de funções/métodos. 
+- Funções de callback. 
+- Composição de funções. 
+- Diferenças entre programação funcional e orientada a objetos. 
+- Diferenças de uso de programação funcional em linguagens dinâmica e estaticamente tipadas.
+- Expressões lambda (lambda expressions / arrow functions) e funções anônimas. 
+- Modelo de programação Map/Reduce: operações de filtro, mapeamento e redução em conjuntos de dados. 
+- Processamento paralelo de dados. 
+- Aridade de funções e o impacto em programação funcional.
+
+## Conteúdo Programático
+
+- ✅ Introdução e benefícios da programação funcional. 
+- Fundamentos da programação funcional em linguagens dinâmica e estaticamente tipadas. 
+- ✅ Imutabilidade e corretude de software. 
+- ✅ Funções puras. Funções como elementos de primeira classe. 
+- Funções de callback. 
+- Referências de funções/métodos. 
+- Composição de funções. 
+- ✅ Diferenças entre programação funcional e orientada a objetos. 
+- Diferenças de uso de programação funcional em linguagens dinâmica e estaticamente tipadas.
+- Expressões lambda (lambda expressions / arrow functions) e funções anônimas. 
+    * Effective final em Java e outras linguagens: variáveis final/const por padrão
+- Modelo de programação Map/Reduce: operações de filtro, mapeamento e redução em conjuntos de dados. 
+- Processamento paralelo de dados. 
+- Aridade de funções e o impacto em programação funcional.
+
+## Justificativa
+
+### Competências
+
+- Compreender os benefícios da programação funcional e sua importância atual no desenvolvimento de software.
+- Compreender a estrutura de um código utilizando programação funcional.
+- Compreender como diferentes paradigmas de programação podem coexistir em uma mesma base de código.
+- Entender os benefícios da programação funcional para o reuso de funções e concisão de código.
+- Entender o conceito de funções com responsabilidade única na programação funcional e os benefícios para o teste de software.
+- Entender as diferenças entre a criação de expressões lambda vs passagem de referência para funções/métodos.
+- Entender os perigos da mutabilidade e como escrever código com dados imutáveis. - Conhecer as boas práticas em programação funcional e uso de funções de callback.
+
+### Habilidades
+
+- Utilizar recursos de programação funcional de linguagens dinâmica e estática/fortemente tipadas.
+- Aplicar processamento de dados por meio de operações de mapeamentoe redução.
+- Realizar busca e filtragem de dados com programação funcional.
+- Aplicar conceitos de imutabilidade em processamento de dados com programação
+funcional.
+- Realizar agrupamento de dados e cálculo de estatísticas com programação funcional.
+- Criar expressões lambda (lambda expressions / arrow functions) e passá-las por parâmetro para outras funções.
+- Declarar funções em variáveis / constantes.
+- Passar funções como parâmetro para outras funções.
+- Reutilizar funções com programação funcional.
+
+## Objetivo Geral
+
+Apresentar os conceitos fundamentais de programação funcional e obter prática na escrita de código seguindo tal paradigma.
+
+## Objetivos Específicos
+
+- Compreender os fundamentos de programação funcional
+- Entender a importância de tal paradigma
+- Conhecer os recursos de diferentes linguagens funcionais
+- Escrever código seguindo tal paradigma usando linguagens estáticas e dinâmicas
+
+## Metodologia
+
+Aulas assíncronas gravadas, expositivas e práticas com exercícios propostos.
+
+## Bibliografia Básica
+
+1. JDK 8 Massive Open and Online Course: Lambdas and Streams Introduction
+(somente inglês). Oracle Learning Library. 2016. Disponível em https://apexapps.oracle.com/pls/apex/f?p=44785:145:10103135022719::NO:RP,145:P145_EVENT_ID,P145_PREV_PAGE:5067,2
+2. Processing Data with Java SE 8 Streams. Oracle. 2014. Disponível em https://www.oracle.com/technical-resources/articles/java/ma14-java-se-8-streams.html
+3. JavaScript. Mozilla Developer Network (MDN). 2022. Disponível em https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+4. Introduction to Functional Programming: JavaScript Paradigms (somente inglês). TopTal Inc. Disponível em https://www.toptal.com/javascript/functional-programming-javascript
+
+## Bibliografia Complementar
+
+1. SILVA, Maurício Samy. JavaScript: guia do programador. São Paulo: Novatec, 2010. 604p., il. (n. 1). ISBN 978-85-7522-248-5.
+2. GOODMAN, Danny. JavaScript: a bíblia. Tradução de Daniel VIEIRA. Rio de Janeiro: Campus, 2001. 909 p. (n. 1). ISBN 85-352-0828-3.
+3. MORRISON, Michael. Use a cabeça ! Java script. Rio de Janeiro: Alta Books, 2008. 606 p. (n. 1).
