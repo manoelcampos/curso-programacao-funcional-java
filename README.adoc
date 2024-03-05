@@ -38,9 +38,11 @@ Este repositório fornece um projeto para permitir praticar programação funcio
 
 O recurso de Streams introduzido no Java 8 (não confundir com _InputStream_ e _OutputStream_) permite processamento de dados de forma sequencial e paralelo. Neste último caso, processamento paralelo (utilizando múltiplas CPUs de uma mesma máquina) tem tudo a ver com sistemas distribuídos. Desta forma, tais recursos são de fundamental importância para complementar a formação do estudante em programação.
 
-== Projeto Base
+== Repositórios com exercícios das aulas
 
-Se quiser baixar o projeto vazio (somente com a parte de geração de estudantes aleatórios) para praticar, acesse https://github.com/manoelcampos/programacao-funcional-java-projeto-base.
+- [Aula 01: Soma do dobro dos números pares em JS](https://github.com/manoelcampos/fp-aula-01-soma-dobro-pares-js)
+- [Aula 02: Imutabilidade em Java](https://github.com/manoelcampos/fp-aula-02-imutabilidade-java)
+- [Aula 04: Lambda e Streams em Java](https://github.com/manoelcampos/fp-aula-04-java-projeto-base/tree/main)
 
 == Material de Apoio
 
