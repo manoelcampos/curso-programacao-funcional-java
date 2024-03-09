@@ -21,5 +21,3 @@ jobs:
         cache: maven
     - name: Build estatisticas-estudantes-estruturado
       run: mvn -B package --file estatisticas-estudantes-estruturado/pom.xml
-    - name: Build estatisticas-estudantes-funcional
-      run: mvn -B package --file estatisticas-estudantes-funcional/pom.xml
