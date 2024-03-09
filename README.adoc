@@ -1,3 +1,4 @@
+:javadoc: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/package-summary.html
 :source-highlighter: highlightjs
 :numbered:
 :icons: font
@@ -59,7 +60,7 @@ Apesar de serem em inglês, os vídeos contam com legendas oficiais (que podem s
 
 Ao iniciar em programação funcional no Java 8+, é preciso aprender um novo vocabulário.
 
-image:interfaces-funcionais.png[]
+image:interfaces-funcionais.png[link={javadoc}]
 
 Conhecendo os termos deste vocabulário, quando você vir um método que solicita como parâmetro um objeto:
 
@@ -68,7 +69,7 @@ e retorna um valor `boolean`, representando uma condição em relação a tal ob
 - `Consumer`, saberá que pode passar uma expressão lambda que representa uma função que recebe um objeto (como `Student`),
 faz qualquer coisa com ele (consome) e não retorna nada (`void`). 
 
-Assim, para entender este novo vocabulário, você poderá ver o JavaDoc do pacote `java.util.function` no seu IDE, ou acessar https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/package-summary.html[aqui].
+Assim, para entender este novo vocabulário, você poderá ver o JavaDoc do pacote `java.util.function` no seu IDE, ou acessar link:{javadoc}[aqui].
 Entender este vocabulário faz toda a diferença na sua fluência em programação funcional.
 
 == Novidades da Linguagem Java
