@@ -1,0 +1,107 @@
+= Exame Final Programação Funcional - SisNet - IFTO
+Prof. Dr. Manoel Campos
+:pagenums:
+:source-highlighter: rouge
+
+Nome Completo:
+
+'''
+
+== Regras para avaliação do exame
+
+Antes de proseguir, coloque seu nome na parte superior da prova.
+
+Todas as regras abaixo devem ser seguidas para que o exame seja avaliado. *Se qualquer uma dessas regras deixar de ser seguida, sua prova não será avaliada e você receberá nota zero.*
+
+1. Não pode existir qualquer erro de compilação no seu código. Se existirem erros de sintaxe que impediriam a compilação, a questão não será avaliada.
+1. Se forem identificados códigos idênticos ou muito semelhantes entre estudantes, a nota final de todos os envolvidos será zero.
+1. *Todo o código deve utilizar programação funcional*, com Streams e Lambdas onde for possível. Código estruturado que poderia ter sido escrito de forma funcional será ignorado.
+1. O código funcional deve utilizar as melhores práticas indicadas nas aulas, incluindo imutabilidade, lambdas pequenas e que tenham apenas uma responsabilidade.
+1. Todas as páginas entregues devem estar numeradas e terem seu nome completo.
+
+Por fim, você pode responder o exame usando lápis, mas neste caso, não serão aceitas reclamações após a entrega das notas.
+
+== Código base para resolução das questões
+
+Considere que você tem as classes abaixo para resolver as questões a seguir.
+Não foram exibidos getters e setters por simplificação, mas considere que tais métodos existem no momento de escrever seu código.
+
+[source,java]
+----
+public class Campus {
+    private int id;
+    private String nome;
+}
+
+public class Curso {
+    private int id;
+    private String nome;
+    private int semestres;
+    private Campus campus;
+}
+
+public class Estudante {
+    private int id;
+    private String nome;
+    private char sexo;
+    private double nota;
+    private int anoGraduacao;
+    private Curso curso;
+}
+----
+
+Considere ainda que:
+
+- Você tem um variável `List<Estudante> estudantes` que possui uma lista de estudantes qualquer (os dados de fato na lista e quantos estudantes existem não importam). Tal lista deve ser usada para resolver as questões a seguir.
+- Podem existir estudantes que não estejam matriculados em um curso e tal atributo pode ser `null`. Assim, seu código deve evitar `NullPointerException` em todas as questões.
+
+== Questão 1 (1,0 ponto)
+
+Implemente um código para imprimir a média de notas dos estudantes matriculados no curso de ID 1, que tenham nota menor que 4.
+
+== Questão 2 (2,0 pontos)
+
+Implemente um código para imprimir o nome dos cursos que tenham estudantes matriculados com nota maior que 7, sem repetir o nome do curso.
+
+== Questão 3 (2,0 pontos)
+
+Implemente um código para imprimir o estudante com a maior nota do curso de ID 2.
+Utilize a operação `reduce()` que recebe uma lambda do tipo `BinaryOperator`.
+Tal lambda a ser passada para o `reduce()` deve ter 2 parâmetros `e1` e `e2`, que são dois estudantes a serem comparados. A lambda deve retornar o estudante com a maior nota entre os dois.
+O resultado do `reduce()` é um `Optional<Estudante>`.
+Você deve garantir que, se nenhum estudante for encontrado, será lançada uma exceção
+para indicar tal situação.
+
+== Questão 4 (2,0 pontos)
+
+Implemente um código para imprimir os estudantes que estejam matriculados em cursos de 6 semestres, ordenados pelo curso em ordem crescente e por nota em ordem descrescente.
+
+== Questão 5 (3 pontos)
+
+Crie uma interface funcional chamada `MediaNota`, que tenha um método `calcular`:
+
+- com o parâmetro `double notas[]` representando um vetor de notas de diferentes estudantes
+- e retorne um `double` representando a média a ser calculada para as notas recebidas.
+
+Uma interface funcional é qualquer uma que tenha apenas um método abstrato. No entanto, é preciso usar um recurso de Java para garantir que a interface continue como funcional.
+
+Esta interface representa uma operação de cálculo de média que pode ser implementada para média artimética, média ponderada ou qualquer outro tipo. Sendo uma interface funcional, ela pode ser usada para implementar tal cálculo de algum tipo de média usando uma expressão lambda.
+
+Crie um método `imprimirMediaAlunosCurso(MediaNota calculaMedia)` que internamente obtém o vetor de notas dos estudantes do curso de ID 2. O método criado deve usar o parâmetro funcional `calculaMedia` para calcular a média de todos estes estudantes e imprimir o resultado.
+
+Além da interface que você deve criar, seu código deve ser algo como:
+
+[source, java]
+----
+void questao5() {
+    // Chame o método imprimirMediaAlunosCurso aqui,
+    // passando uma lambda para calcular a média aritmética das notas
+    // dos alunos indicados no enunciado da questão.
+}
+
+void imprimirMediaAlunosCurso(MediaNota calculaMedia){
+    // Uma variável local vetorNotas deve receber um vetor com
+    // as notas dos estudantes indicados no enunciado.
+    // Use o parâmetro calculaMedia para calcular e imprimir a média
+}
+----
