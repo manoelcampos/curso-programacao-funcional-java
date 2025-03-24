@@ -1,4 +1,4 @@
-# Plano de Ensino Sistemas Distribuídos
+# Plano de Ensino Programação Funcional
 
 ## Ementa
 
@@ -18,24 +18,15 @@ Preparar aulas a partir da seção "Conteúdo Programático"
 - Processamento paralelo de dados. 
 - Aridade de funções e o impacto em programação funcional.
 
-## Conteúdo Programático
-
-- ✅ Introdução e benefícios da programação funcional. 
-- Fundamentos da programação funcional em linguagens dinâmica e estaticamente tipadas. 
-- ✅ Imutabilidade e corretude de software. 
-- ✅ Funções puras. Funções como elementos de primeira classe. 
-- Funções de callback. 
-- Referências de funções/métodos. 
-- Composição de funções. 
-- ✅ Diferenças entre programação funcional e orientada a objetos. 
-- Diferenças de uso de programação funcional em linguagens dinâmica e estaticamente tipadas.
-- Expressões lambda (lambda expressions / arrow functions) e funções anônimas. 
-    * Effective final em Java e outras linguagens: variáveis final/const por padrão
-- Modelo de programação Map/Reduce: operações de filtro, mapeamento e redução em conjuntos de dados. 
-- Processamento paralelo de dados. 
-- Aridade de funções e o impacto em programação funcional.
-
 ## Justificativa
+
+### Tutoria
+
+O próprio professor titular é o tutor da disciplina.
+É utilizada plataforma Moodle, onde os alunos são automaticamente cadastrados na disciplina.
+Utiliza-se ainda grupo no Telegram (link no Moodle) para ter contato direto com a turma.
+
+O atendimento ao aluno ocorre por meio do Telegram ou, quando solicitado, por chamadas de vídeo no Google Meet ou atendimento presencial no campus.
 
 ### Competências
 
@@ -71,6 +62,27 @@ Apresentar os conceitos fundamentais de programação funcional e obter prática
 - Conhecer os recursos de diferentes linguagens funcionais
 - Escrever código seguindo tal paradigma usando linguagens estáticas e dinâmicas
 
+
+## Conteúdo Programático
+
+- Apresentação da Disciplina
+- Introdução à Programação Funcional
+- Imutabilidade: um dos aspectos mais importantes da Programação Funcional
+- Funções: o coração da Programação Funcional
+- Iniciando a prática com Lambdas e Streams em Java
+- Java Streams, boas práticas e Interfaces Funcionais
+- Interfaces funcionais: Predicate, Comparator | Coletando dados
+- Dominando o tipo Optional e o que é Null Safety
+- Redução de Dados, Redescobrindo o Map e Coleta de dados para um Map
+- Lazy Evaluation: avaliação preguiçosa ou tardia
+- Operações Intermediárias e Terminais com Streams
+- Processando elementos contendo um conjunto de dados com Stream.flatMap
+- Projeto Polígonos
+- Loops com Streams numéricas em Java
+- Código funcional em todo lugar
+- Erros comuns ao iniciar em programação funcional em Java
+- Interfaces Funcionais personalizadas
+
 ## Metodologia
 
 Aulas assíncronas gravadas, expositivas e práticas com exercícios propostos.
@@ -85,6 +97,6 @@ Aulas assíncronas gravadas, expositivas e práticas com exercícios propostos.
 
 ## Bibliografia Complementar
 
-1. SILVA, Maurício Samy. JavaScript: guia do programador. São Paulo: Novatec, 2010. 604p., il. (n. 1). ISBN 978-85-7522-248-5.
-2. GOODMAN, Danny. JavaScript: a bíblia. Tradução de Daniel VIEIRA. Rio de Janeiro: Campus, 2001. 909 p. (n. 1). ISBN 85-352-0828-3.
-3. MORRISON, Michael. Use a cabeça ! Java script. Rio de Janeiro: Alta Books, 2008. 606 p. (n. 1).
+1. ✅ SILVA, Maurício Samy. JavaScript: guia do programador. São Paulo: Novatec, 2010. 604p., il. (n. 1). ISBN 978-85-7522-248-5.
+2. ✅ GOODMAN, Danny. JavaScript: a bíblia. Tradução de Daniel VIEIRA. Rio de Janeiro: Campus, 2001. 909 p. (n. 1). ISBN 85-352-0828-3.
+3. ✅ MORRISON, Michael. Use a cabeça: Java script. Rio de Janeiro: Alta Books, 2008. 606 p. (n. 1).
