@@ -6,6 +6,8 @@ aulas-*
 exemplos
 provas/
 *.pdf
+# moodle backup
+*.mbz
 
 ~$*
 
