@@ -4,6 +4,7 @@ test-project/
 aula-*
 aulas-*
 exemplos
+provas/
 *.pdf
 
 ~$*
