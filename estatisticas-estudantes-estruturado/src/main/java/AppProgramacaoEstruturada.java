@@ -2,7 +2,7 @@ import java.util.*;
 
 /**
  * Uma versão estruturada do aplicativo de estatísticas
- * de estudantes, para compararação com a versão funcional.
+ * de estudantes, para comparação com a versão funcional.
  *
  * @author Manoel Campos da Silva Filho
  */
